@@ -1,14 +1,39 @@
-# Release 0.41.0-dev
+# Release 0.42.0-dev
+ 
+ ### New features since last release
+ 
+ ### Improvements 🛠
+ 
+ ### Breaking changes 💔
+ 
+ ### Deprecations 👋
 
-### New features since last release
+ ### Internal changes ⚙️
 
-### Improvements 🛠
+ * Updated tests to keep into account that wires validation on `default.qubit` in PennyLane now takes place 
+  after the `mid_circuit_measurements` transform is applied during preprocessing.
+  [(#628)](https://github.com/PennyLaneAI/pennylane-qiskit/pull/628)
 
-### Breaking changes 💔
+  * Bumped the `readthedocs.yml` action up to Ubuntu-24.04.
+    [(#629)](https://github.com/PennyLaneAI/pennylane-qiskit/pull/629)
+ 
+ ### Documentation 📝
 
-### Deprecations 👋
+ * Users are now redirected to `pennylane.ai/search` with the doc content type selected 
+  and the associated project and version filters selected when using the search bar.
+  [(#617)](https://github.com/PennyLaneAI/pennylane-qiskit/pull/617)
 
-### Documentation 📝
+ ### Bug fixes 🐛
+ 
+ ### Contributors ✍️
+ 
+ This release contains contributions from (in alphabetical order):
+
+ Pietropaolo Frisoni
+ Andrew Gardhouse
+ 
+ ---
+# Release 0.41.0
 
 ### Bug fixes 🐛
 
@@ -18,6 +43,25 @@
 ### Contributors ✍️
 
 This release contains contributions from (in alphabetical order):
+
+Juan Felipe Huan Lew Yee
+
+---
+# Release 0.40.1
+
+### Internal changes ⚙️
+
+* Pinning `setuptools` in the CI to update how the plugin is installed.
+  [(#620)](https://github.com/PennyLaneAI/pennylane-cirq/pull/620)
+
+* Pinning `qiskit.aer` in the `setup.py` file to maintain compatibility with the plugin.
+  [(#620)](https://github.com/PennyLaneAI/pennylane-cirq/pull/620)
+
+### Contributors ✍️
+
+This release contains contributions from (in alphabetical order):
+
+Pietropaolo Frisoni
 
 ---
 # Release 0.40.0
